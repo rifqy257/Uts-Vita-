@@ -1,0 +1,141 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px; /* Diperkecil */
+    background-color: #fff;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.header .logo h1 {
+    font-size: 18px; /* Ukuran teks lebih kecil */
+    color: #333;
+}
+
+.header .search-bar input {
+    padding: 3px 5px; /* Diperkecil */
+    border-radius: 15px;
+    border: 1px solid #ddd;
+    width: 150px; /* Lebih kecil */
+}
+
+.header .profile img {
+    width: 30px; /* Lebih kecil */
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Layout utama dengan Grid */
+.main {
+    display: grid;
+    grid-template-columns: 250px 1fr; /* Sidebar lebih sempit */
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Sidebar */
+.sidebar {
+    background-color: #fff;
+    padding: 10px; /* Diperkecil */
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.sidebar .user-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.sidebar .user-info img {
+    width: 40px; /* Lebih kecil */
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.sidebar .links a {
+    display: block;
+    padding: 8px; /* Diperkecil */
+    color: #333;
+    font-size: 14px; /* Ukuran font lebih kecil */
+    text-decoration: none;
+    border-bottom: 1px solid #ddd;
+}
+
+.sidebar .links a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Feed */
+.feed {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.post {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+    display: flex; /* Menjadikan layout horizontal */
+    padding: 10px;
+}
+
+/* Header Post */
+.post-header {
+    display: flex;
+    align-items: center;
+    margin-right: 15px; /* Memberikan ruang antara gambar dan teks */
+}
+
+/* Avatar Post */
+.post-header .post-avatar {
+    width: 50px; /* Memperbesar ukuran gambar */
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Teks Pengguna */
+.post-header .post-user {
+    font-size: 16px; /* Ukuran font sedikit lebih besar */
+    font-weight: bold;
+}
+
+/* Gambar Post */
+.post-image {
+    width:50px; /* Gambar lebih besar dan di sebelah kiri */
+    height: auto;
+    margin-left: 5px;
+    border-radius: 4px;
+}
+
+/* Konten Teks Post */
+.post-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    margin-left: 10px;
+}
+
+.post-content .post-text {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
